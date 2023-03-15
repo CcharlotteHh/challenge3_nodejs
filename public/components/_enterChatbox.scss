@@ -1,0 +1,40 @@
+//50% is 960px w 
+
+.enterChatbox {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  @include flexbox($justifyContent: center, $alignItems: center);
+  .loginForm {
+    width: 50%;
+   
+    @include flexbox($justifyContent: center, $alignItems: center);
+   .inputContainer{
+    @include flexbox;
+    position: relative;
+    width: 40%;
+    height: 40%;
+    .username{
+       width: 70%;
+       left:0;
+        
+    }
+    .loginBtn{
+        position: absolute;
+        width: 30%;
+        right: 15%
+        
+    }
+   }
+  }
+  .loginText{
+    width: 50%;
+    @include flexbox($justifyContent: center, $alignItems: flex-start);
+  p{
+    width: 61%;
+    text-align: start;
+    font-size:33px ;
+    color:black;
+  }
+}
+}

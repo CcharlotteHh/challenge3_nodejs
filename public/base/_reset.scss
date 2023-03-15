@@ -1,3 +1,4 @@
+
 *, *:before, *:after{
     box-sizing: border-box;
     color: white;
@@ -7,7 +8,7 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
     margin: 0;
     padding: 0;
     border: 0;
-    
+    box-sizing: border-box;
     font: inherit;
     vertical-align: baseline;
     text-rendering: optimizeLegibility;
@@ -16,13 +17,12 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 html {
-    background: no-repeat center center fixed
-      linear-gradient(to bottom, $darkblue, $blue, $purple, $almostpurple);
+   
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family: $primaryFontFamily;
+    
   }
 
 footer, header, nav, section, main{
@@ -32,6 +32,8 @@ footer, header, nav, section, main{
 
 body{
     line-height: 1;
+    width: 100vw;
+    height: 100vh;
 }
 
 ol, ul{
@@ -68,3 +70,7 @@ a{
 button{
     cursor: pointer;
 }  
+
+main{
+    height: 77%;
+}

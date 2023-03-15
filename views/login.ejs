@@ -12,17 +12,20 @@
         <h1>Enter Chatbox</h1>
     </header>
     <main>
-    <!-- <h2>Please enter your username</h2> -->
+    <section class="enterChatbox">
 
-    <form>
-        <label for="username">username</label>
-        <input type="text" id="username" name="username" placeholder="Username"  value="<%= locals.username %>"autocomplete="off" autofocus required>
-        <input type="submit" value="login">
+    <form class="loginForm">
+        <div class="inputContainer">
+        <!-- <label for="username">username</label> -->
+        <input type="text" class="username" id="username" name="username" placeholder="Username"  value="<%= locals.username %>"autocomplete="off" autofocus required>
+        <input class="loginBtn" type="submit" value="login">
+    </div>
     </form>
 
     <div class="loginText">
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam nulla, recusandae veritatis porro, voluptatibus provident ex reiciendis debitis repellendus tempore suscipit nostrum. Nemo asperiores doloremque corrupti odit?</p>
     </div>
+</section>
 </main>
     <footer>
 
