@@ -24,6 +24,10 @@ app.get('/login', (req, res) =>{
     res.render('login')
 })
 
+app.get('/chat', (req, res) =>{
+    res.render('chat')
+})
+
 app.post('/login',(req,res) =>{
     res.redirect(`/chat/${req.body.username}`);
 });
